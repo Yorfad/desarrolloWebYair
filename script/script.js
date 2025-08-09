@@ -1,12 +1,6 @@
 let contador = 0;
 
 
-document.querySelectorAll('.btn-buy').forEach(btn => {
-  btn.addEventListener('click', () => {
-    contador++;
-    document.getElementById('contador-carrito').textContent = contador;
-  });
-});
 
 const contenedor = document.getElementById("container-cards");
 const template = document.getElementById("card");
@@ -33,6 +27,8 @@ async function cargarProductosDesdeAPI() {
 
       clon.querySelector(".btn-buy").addEventListener("click", () => {
         alert(`Compraste: ${producto.Nombre}`);
+        contador++;
+        document.getElementById('contador-carrito').textContent = contador;
       });
 
       fragmento.appendChild(clon);
