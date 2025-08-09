@@ -75,13 +75,7 @@
         <section  class="m-3 row"> <!--    section general-->
 
             <section  class="col-sm-3"> <!--    section de las categorias-->
-                <ul class="border border-ligth list-unstyled">
-                    <li class="m-2"><a class="text-reset text-decoration-none" href="#">categoria 1</a></li>
-                    <li class="m-2"><a class="text-reset text-decoration-none" href="#">categoria 2</a></li>
-                    <li class="m-2"><a class="text-reset text-decoration-none" href="#">categoria 3</a></li>
-                    <li class="m-2"><a class="text-reset text-decoration-none" href="#">categoria 4</a></li>
-                    <li class="m-2"><a class="text-reset text-decoration-none" href="#">categoria 5</a></li>
-                </ul>
+                <ul id="conteiner-categories" class="list-unstyled d-flex flex-wrap"></ul>
             </section>
                 
             <section  class="col-sm-9"> <!--    section de las cards-->
@@ -113,6 +107,14 @@
             <button class="btn btn-primary btn-buy">Comprar</button>
             </div>
         </div>
+    </template>
+
+    <template id="categories">
+    <li class="m-2">
+        <button type="button" class="btn btn-link p-0 category-btn">
+        <span class="category-text"></span>
+        </button>
+    </li>
     </template>
 
     <footer class="container text-center">
